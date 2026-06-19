@@ -85,7 +85,7 @@ def main():
     if sample_mean is not None and sample_std is not None and sample_size is not None:
         st.sidebar.header("Test Parameters")
         hypothesized_mean = st.sidebar.number_input("Hypothesized Population Mean (μ₀)", 
-                                                 value=float(sample_mean))
+                                                 value=0.0)
         alpha = st.sidebar.number_input("Significance Level (α)", 
                                       value=0.05, min_value=0.001, max_value=0.5, step=0.01)
         test_type = st.sidebar.radio("Test Type", 
